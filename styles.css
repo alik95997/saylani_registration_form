@@ -1,0 +1,155 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    margin-left: 10%;
+    top: 0;
+    width: 80%;
+    height: 30%;
+    background-image: url(banner.avif);
+    opacity: 0.1;
+}
+
+.icons img {
+    margin: 8px;
+    width: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.reg-heading h1 {
+    text-align: center;
+}
+
+.reg-heading {
+    font-size: 90%;
+    text-align: center;
+}
+
+.std-portal-btn a button {
+    color: blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.info a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.info {
+
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+.field {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    margin-top: 20px;
+    color: blue;
+    text-align: center;
+    font-size: small;
+    
+}
+
+input,option,select{
+    
+    background-color: transparent;
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: start;
+    padding: 15px;
+    display: inline-block;
+    color: #666;
+    border: 1px solid #8dc63f;
+    border-radius: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input:hover{border-color: #0d6efd;}select:hover{border-color: #0d6efd;}
+form {
+    margin-bottom: 50px;
+}
+
+form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.para {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        margin: auto;
+
+    }
+
+    .field {
+        width: 100%;
+        display: block;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+    }
+
+    label {
+        text-align: start;
+    }
+
+    input,
+    option,
+    select {
+        display: block;
+        margin: 0px 5px;
+        width: 98%;
+    }
+}

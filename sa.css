@@ -1,0 +1,145 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    margin-top: 12px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    background-image: url(banner.avif);
+    opacity: 0.1;
+}
+
+.icons img {
+    margin: 0px 5px ;
+    width: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.reg-heading h1 {
+    text-align: center;
+}
+
+.reg-heading {
+    font-size: 90%;
+    text-align: center;
+}
+
+.std-portal-btn a button {
+    color: blue;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.info a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.info {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+
+label {
+    
+            width: 30%;
+            margin-top: 5px;
+            color: blue;
+            font-size: small;
+          
+}
+
+input,option,select{
+    background-color: transparent;
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: start;
+    padding: 15px;
+    display: inline-block;
+    color: #666;
+    border: 1px solid #8dc63f;
+    border-radius: 8px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+}
+input:hover{border-color: #0d6efd;}select:hover{border-color: #0d6efd;}
+
+
+form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.para {
+    line-height: 1.5;
+    font-size: small;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.submit-btn {
+    width: 70%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+}
+.sbmt-btn{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        margin: auto;
+
+    }
+
+    
+
+    .info {
+        width: 100%;
+        display: flex;
+    }
+
+    label {
+        text-align: start;
+    }
+
+    input,
+    option,
+    select {
+        display: block;
+        margin: 0px 5px;
+        width: 98%;
+    }
+}
