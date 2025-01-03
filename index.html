@@ -44,26 +44,25 @@
 
         <div class="slct-city slct-crs field">
             <label for="">Select City</label>
-            <select name="" id="">
+            <select name="" id="city">
                 <option value="" selected disabled>Select City</option>
-                <option value="">Karachi</option>
-                <option value="">Hyderabad</option>
-                <option value="">Islamabad</option>
-                <option value="">Gotki</option>
-                <option value="">Quetta</option>
-
+                <option value="Karachi">Karachi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Gotki">Gotki</option>
+                <option value="Quetta">Quetta</option>
             </select>
 
             <label for="">Select course or event</label>
-            <select name="" id="">
+            <select name="" id="course">
                 <option value="" disabled selected>Select course or event</option>
-                <option value="">Web and Mobile App development</option>
-                <option value="">Graphic Designing</option>
-                <option value="">Video Animation</option>
-                <option value="">CCNA</option>
-                <option value="">Cyber Security</option>
-                <option value="">Ai & Chatbot</option>
-                <option value="">Flutter</option>
+                <option value="Web and Mobile App development">Web and Mobile App development</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Video Animation">Video Animation</option>
+                <option value="CCNA">CCNA</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Ai & Chatbot">Ai & Chatbot</option>
+                <option value="Flutter">Flutter</option>
             </select>
         </div>
 
@@ -73,83 +72,86 @@
 
         <div class="field">
             <label for="">Select campus</label>
-            <select name="" id="">
+            <select name="" id="campus">
                 <option value="" selected disabled>Select campus</option>
-                <option value="">F-10 Markaz campus</option>
+                <option value="F-10 Markaz campus">F-10 Markaz campus</option>
+                <option value="Bahadurabad">Bahadurabad</option>
+                <option value="Gulshan">Gulshan</option>
+                <option value="Paposh">Paposh</option>
             </select>
 
             <label for="">Select class preference</label>
 
-            <select name="" id="">
+            <select name="" id="classPreference">
                 <option value="" selected disabled>Select class preference</option>
-                <option value="">Weekdays(Monday to Friday)</option>
-                <option value="">Weekend(Saturday & Sunday)</option>
-                <option value="">Both</option>
+                <option value="Weekdays(Monday to Friday)">Weekdays(Monday to Friday)</option>
+                <option value="Weekend(Saturday & Sunday)">Weekend(Saturday & Sunday)</option>
+                <option value="Both">Both</option>
             </select>
 
         </div>
 
         <div class="field">
             <label for="">Full Name</label>
-            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Full Name" id="fullName">
 
             <label for="">Father Name</label>
-            <input type="text" placeholder="Father Name">
+            <input type="text" placeholder="Father Name" id="fatherName">
         </div>
 
         <div class="field">
             <label for="">Email</label>
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" id="email">
 
             <label for="">Phone</label>
-            <input type="email" placeholder="Phone">
+            <input type="email" placeholder="Phone" id="phone">
         </div>
 
         <div class="field">
             <label for="">CNIC</label>
-            <input type="number" placeholder="CNIC">
+            <input type="number" placeholder="CNIC" id="cnic">
 
             <label for="">Fathers's CNIC(optional)</label>
-            <input type="number" name="" id="" placeholder="Father's CNIC">
+            <input type="number" name="" id="fcnic" placeholder="Father's CNIC" >
         </div>
 
         <div class="field">
             <label for="">Date of Birth</label>
-            <input type="date">
+            <input type="date" id="date">
 
             <label for="">Select gender</label>
-            <select name="" id="">
+            <select name="" id="gender">
                 <option value="" disabled selected>Select gender</option>
-                <option value="">Male</option>
-                <option value="">female</option>
+                <option value="Male">Male</option>
+                <option value="female">female</option>
             </select>
         </div>
 
         <div class="field full-width">
             <label for="">Address</label>
-            <input type="text" placeholder="Address" style="  width: 100% !important; ">
+            <input type="text" placeholder="Address"  id="address">
         </div>
 
         <div class="field full-width">
             <label for="">Last qualification</label>
-            <select name="" id="" style="width: 100%;">
+            <select name=""    id="qualification">
                 <option value="" disabled selected>Last qualification</option>
-                <option value="">Matric</option>
-                <option value="">Intermediate</option>
-                <option value="">Undergraduate</option>
-                <option value="">Graduate</option>
-                <option value="">Masters</option>
-                <option value="">PHD</option>
-                <option value="">others</option>
+                <option value="Matric">Matric</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Masters">Masters</option>
+                <option value="PHD">PHD</option>
+                <option value="others">others</option>
             </select>
         </div>
 
         <div class="field full-width">
             <label for="">Do you have laptop</label>
-            <select name="" id="" style="width: 100%;">
+            <select name="" id="laptop" >
                 <option value="" selected disabled>Do you have laptop</option>
-                <option value="">YES</option>
-                <option value="">NO</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
             </select>
         </div>
         <div class="field  picture">
@@ -176,9 +178,10 @@
             </ol>
         </div>
         <div class="sbmt-btn field full-width">
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn" onclick="submitInfo(event)">Submit</button>
         </div>
     </form>
 </body>
+<script src="./app.js" type="module"></script>
 
 </html>
